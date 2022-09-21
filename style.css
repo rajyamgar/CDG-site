@@ -1,0 +1,384 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.orangefont {
+  color: #F15A29;
+}
+
+.orangegradb:hover {
+  background: linear-gradient(90deg, #F41B3B 50%, #F2522E 0%);
+}
+
+
+.bluebg {
+  background: #0089CF;
+  padding: 0;
+}
+
+.bluegreenbg {
+  background: linear-gradient(90deg, #0089CF 23.53%, #1BBFA1 100%);
+  padding: 0;
+}
+
+.absolheadlines {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+/* Hero section start */
+#hero {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero,
+.layer {
+  min-height: 300px;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  z-index: -1;
+}
+
+.layer-bg {
+  background: linear-gradient(90deg, #0089CF 23.53%, #1BBFA1 100%);
+}
+
+.layer-1 {
+  background-image: url("svg/smallconcen.svg");
+  background-position: left;
+}
+
+.layer-2 {
+  background-image: url("svg/earth.svg");
+}
+
+.layer-3 {
+  background-image: url("svg/lgconcen.svg");
+  background-position: right;
+}
+
+.layer-4 {
+  background-image: url("svg/lgconcen.svg");
+}
+
+.layer-overlay {
+  background-image: url("svg/lgconcen.svg");
+}
+
+/* Hero parallax -------------------------*/
+
+.parallax {
+  height: 280px;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0089CF 23.53%, #1BBFA1 100%);
+}
+
+.bg1,
+.bg2,
+.bg3 {
+  position: relative;
+  width: 100%;
+}
+
+.bg1 {
+  bottom: -50%;
+}
+
+.bg2 {
+  left: 5%;
+  top: -80%;
+}
+
+.bg3 {
+  top: -250%;
+  right: -60%;
+}
+
+svg {
+  max-width: 100%;
+}
+
+/* Hero parallax  END-------------------------*/
+
+/* dotted pattern background start--------------------------*/
+.formbg {
+  background-image: linear-gradient(135deg, transparent 0%, #fff 25%, #fff 75%, transparent 100%), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAIklEQVQoU2N89+7dfwYsQEhIiBEkzDgkFGDzAbIY2Cv4AACvrBgJjYNGfwAAAABJRU5ErkJggg==);
+  padding: 2%;
+}
+/* dotted pattern background end--------------------------*/
+
+
+/* Contact form start--------------------------*/
+
+.twocolumn {
+  justify-content: space-around;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 5px 5px 37px #c2c2c2,
+    -5px -5px 37px #ffffff;
+}
+
+.twocolumn>div>div {
+  border-radius: 10px;
+  padding: 16px;
+
+}
+
+/* Contact form end--------------------------*/
+
+/* Animated button--------------------------- */
+
+.animbuttom {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  background: linear-gradient(90deg, #0089CF 23.53%, #1BBFA1 100%);
+  color: rgb(255, 255, 255);
+  border: 2px solid #0089CF;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.animbuttom span {
+  position: relative;
+  z-index: 2;
+}
+
+.animbuttom:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #F2522E 0%, #F41B3B 100%);
+  border-radius: 20px;
+  transition: all .35s;
+}
+
+.animbuttom:hover:after {
+  width: 100%;
+}
+
+
+
+.orangegradbg {
+  display: block;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #F2522E 0%, #F41B3B 100%);
+  color: rgb(255, 255, 255);
+  border: 2px solid #858585;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.orangegradbg span {
+  position: relative;
+  z-index: 2;
+}
+
+.orangegradbg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #0089CF 23.53%, #1BBFA1 100%);
+  transition: all .35s;
+}
+
+.orangegradbg:hover:after {
+  width: 100%;
+}
+
+/* Animated button end--------------------------- */
+
+/* Footer design start--------------------------- */
+
+/* Footer design end--------------------------- */
+
+/* ICONS--------------------------------------- */
+
+
+/* Color Variables */
+/* Social Icon Mixin */
+/* Social Icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.social-icon:hover {
+  color: #fff;
+}
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+  background: #006599;
+  color: #fff;
+}
+.social-icon--linkedin .tooltip {
+  background: #006599;
+  color: currentColor;
+}
+.social-icon--linkedin .tooltip:after {
+  border-top-color: #006599;
+}
+.social-icon--twitter {
+  background: #2b97f1;
+  color: #fff;
+}
+.social-icon--twitter .tooltip {
+  background: #2b97f1;
+  color: currentColor;
+}
+.social-icon--twitter .tooltip:after {
+  border-top-color: #2b97f1;
+}
+.social-icon--youtube {
+  background: #FF0000 ;
+  color: #fff;
+}
+.social-icon--youtube .tooltip {
+  background: #FF0000 ;
+  color: currentColor;
+}
+.social-icon--youtube .tooltip:after {
+  border-top-color: #FF0000 ;
+}
+.social-icon--facebook {
+  background: #3b5a9b;
+  color: #fff;
+}
+.social-icon--facebook .tooltip {
+  background: #3b5a9b;
+  color: currentColor;
+}
+.social-icon--facebook .tooltip:after {
+  border-top-color: #3b5a9b;
+}
+.social-icon--instagram {
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ 
+  color: #fff;
+}
+.social-icon--instagram .tooltip {
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ 
+  color: currentColor;
+}
+.social-icon--instagram .tooltip:after {
+  border-top-color: #f09433;
+}
+.social-icon--dribbble {
+  background: #ef5a92;
+  color: #fff;
+}
+.social-icon--dribbble .tooltip {
+  background: #ef5a92;
+  color: currentColor;
+}
+.social-icon--dribbble .tooltip:after {
+  border-top-color: #ef5a92;
+}
+.social-icon--github {
+  background: #4284c0;
+  color: #fff;
+}
+.social-icon--github .tooltip {
+  background: #4284c0;
+  color: currentColor;
+}
+.social-icon--github .tooltip:after {
+  border-top-color: #4284c0;
+}
+.social-icon i {
+  position: relative;
+  top: 1px;
+}
+
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+/* icon end---------------------------------------------------- */
