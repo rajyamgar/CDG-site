@@ -31,6 +31,9 @@ body {
   width: 100%;
 }
 
+.youtubevid {
+  }
+
 /* Hero section start */
 #hero {
   height: 300px;
@@ -94,26 +97,22 @@ body {
   position: relative;
   width: 100%;
 }
-
 .bg1 {
   bottom: -50%;
 }
-
 .bg2 {
   left: 5%;
-  top: -80%;
+  top: -250px;
 }
-
 .bg3 {
-  top: -250%;
+  top: -750px;
   right: -60%;
 }
-
 svg {
   max-width: 100%;
 }
-
 /* Hero parallax  END-------------------------*/
+
 
 /* dotted pattern background start--------------------------*/
 .formbg {

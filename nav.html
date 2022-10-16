@@ -1,6 +1,6 @@
 
 <!-- start navbar -->
-  <div class="container menu">
+  <div class="container menu navbark">
     <a class="navbar-brand" href="#">
       <img src="images/Logo.png" alt="logo cdg" height="60px">
     </a>
@@ -16,14 +16,18 @@
         <li class="nav-item">
           <a id="home" class="nav-link " aria-current="page" href="index.html">Home</a>
         </li>
+        
+<!-- change data-bs-toggle="-dropdown-" to data-bs-toggle="dropdown" for clickable dropdown -->
 
-        <li class="nav-item ">
-          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown about" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            About
-          </a>
+        <!-- <li class="nav-item ">
+          <a class="nav-link dropdown-toggle" href="about.html" id="about navbarDropdown " role="button" data-bs-toggle="-dropdown-"
+          aria-expanded="false">
+          About
+        </a> -->
+        <li class="nav-item">
+          <a id="about" class="nav-link dropdown-toggle" aria-current="page" href="about.html">About</a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">CDG</a></li>
+            <li><a class="dropdown-item" href="about.html">CDG</a></li>
             <hr class="dropdown-divider">
             <li><a class="dropdown-item" href="#">Messages</a></li>
             <li>
@@ -33,11 +37,13 @@
         </li>
 
         <li class="nav-item ">
-          <a class="nav-link dropdown-toggle" href="initiative.html" id="navbarDropdown initiative" role="button" data-bs-toggle="dropdown"
+          <!-- <a class="nav-link dropdown-toggle" href="initiative.html" id="navbarDropdown initiative" role="button" data-bs-toggle="-dropdown-"
             aria-expanded="false">
             Initiatives
-          </a>
-          <ul id="marker2" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          </a> -->
+          <a id="initiative" class="nav-link dropdown-toggle" aria-current="page" href="initiative.html">Initiatives</a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">UPYOG</a></li>
             <li><a class="dropdown-item" href="#">NULP</a></li>
             <hr class="dropdown-divider">
@@ -46,20 +52,24 @@
         </li>
 
         <li class="nav-item ">
-          <a class="nav-link dropdown-toggle" href="states.html" id="navbarDropdown states" role="button" data-bs-toggle="dropdown"
+          <!-- <a class="nav-link dropdown-toggle" href="states.html" id="navbarDropdown states" role="button" data-bs-toggle="-dropdown-"
             aria-expanded="false">
             States & Cities
-          </a>
+          </a> -->
+          <a id="states" class="nav-link dropdown-toggle" aria-current="page" href="states.html">States & Cities</a>
+
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Partnerships</a></li>
           </ul>
         </li>
 
         <li class="nav-item ">
-          <a class="nav-link dropdown-toggle" href="media.html" id="navbarDropdown media" role="button" data-bs-toggle="dropdown"
+          <!-- <a class="nav-link dropdown-toggle" href="media.html" id="navbarDropdown media" role="button" data-bs-toggle="-dropdown-"
             aria-expanded="false">
             Media
-          </a>
+          </a> -->
+          <a id="media" class="nav-link dropdown-toggle" aria-current="page" href="media.html">Media</a>
+
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Resources</a></li>
             <hr class="dropdown-divider">
@@ -69,10 +79,12 @@
 
 
         <li class="nav-item ">
-          <a class="nav-link dropdown-toggle" href="whatnew.html" id="navbarDropdown whatnew" role="button" data-bs-toggle="dropdown"
+          <!-- <a class="nav-link dropdown-toggle" href="whatnew.html" id="navbarDropdown whatnew" role="button" data-bs-toggle="-dropdown-"
             aria-expanded="false">
             What's New
-          </a>
+          </a> -->
+          <a id="whatnew" class="nav-link dropdown-toggle" aria-current="page" href="whatnew.html">What's New</a>
+
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
             <hr class="dropdown-divider">
@@ -81,7 +93,13 @@
         </li>
 
         <li class="nav-item ">
-          <a id="connect" class="nav-link roundbutton" href="connect.html">Connect</a>
+          <a id="connect" class="nav-link roundbutton dropdown-toggle" aria-current="page" href="connect.html">Connect</a>
+
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="connect.html">Contact us</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="work.html">Work with us</a></li>
+          </ul>
         </li>
 
       </ul>
@@ -116,6 +134,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: large;
   color: #0089CF;
+  border-top: 4px solid #F15A29;
 }
 
 .dropdown-item,
@@ -144,7 +163,7 @@ body {
   color: #fff !important; 
   background-color: #F15A29;
   padding: 0 8px !important;
-  border-radius: 30px !important;
+  border-radius: 40px !important;
   margin-top: 8px;
 }
 
@@ -175,7 +194,7 @@ nav div div ul li:hover .dropdown-menu {
 
   <script>
     var marker = document.querySelector('#marker');
-var item = document.querySelectorAll('nav div div ul li');
+var item = document.querySelectorAll('.navbark div ul li');
 function indicator(e) {
     marker.style.left = e.offsetLeft + "px";
     marker.style.width = e.offsetWidth + "px";
